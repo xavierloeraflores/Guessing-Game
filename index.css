@@ -1,0 +1,126 @@
+html * {
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+main {
+    background: linear-gradient(290deg, #61f6f7, #d1f55f);
+    background-size: 400% 400%;
+
+    animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+    0%{background-position:0% 81%}
+    50%{background-position:100% 20%}
+    100%{background-position:0% 81%}
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content:space-between
+}
+header {
+    box-shadow: 0px 0px 2px black;
+    padding: 16px;
+    background-color: rgb(255, 191, 94);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #1754A1;
+}
+
+
+
+
+
+
+main{
+    display: flex;
+    flex-flow:column nowrap;
+    min-height: 200px;
+    max-height: 100vh;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+button {
+    padding: 4px;
+    border-radius: 6px;
+    border: 1px solid #1A5BB9;
+    box-shadow: 0px 1px 1px black;
+}
+input {
+    box-shadow: 0px 3px 2px rgb(0, 0, 0);
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+
+#guesses  {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#guesses span{
+    text-align: center;
+    padding: 4px;
+    min-width: 16px;
+    font-size: 20px;
+    margin: 16px ;
+    box-shadow: 0px 3px 2px rgb(0, 0, 0);
+    background-color: #1754A1;
+    color: white;
+}
+
+
+footer {
+    box-shadow: 0px 0px 1px black;
+    left:0px;
+    padding: 16px;
+    background-color: rgb(255, 191, 94);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer img  {
+    width: 150px;
+}
+footer div {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+footer span {
+    text-align: center;
+    font-size: 24px;
+    color: #1754A1;
+}
+
+@media (max-width:1100px){
+    footer{
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width:600px){
+    header{
+        text-align: center;
+        flex-flow:column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    #guesses {
+        width: 200px;
+        justify-content: center;
+    }
+
+}
