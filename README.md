@@ -1,2 +1,2 @@
 # Guessing-Game
-Assignemnt for Full Stack
+Assignment for Fullstack Academy
